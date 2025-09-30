@@ -1,55 +1,112 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio Web Developper</title>
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-key="pageTitle">Samir Bensmail - Portfolio</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <!-- Navigation -->
+  <!-- Navigation -->
   <nav>
     <div class="logo">
-      <img src="img/logo.png" alt="Logo de Sam Ben">
+      <img src="img/logo.png" alt="Logo">
     </div>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
     <ul id="nav-links">
-      <li><a href="#home">Accueil</a></li>
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#skills">Compétences</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a data-key="navHome" href="#home">Accueil</a></li>
+      <li><a data-key="navAbout" href="#about">À propos</a></li>
+      <li><a data-key="navExp" href="#experience">Expériences</a></li>
+      <li><a data-key="navEdu" href="#education">Formations</a></li>
+      <li><a data-key="navProjects" href="#projects">Projets</a></li>
+      <li><a data-key="navSkills" href="#skills">Compétences</a></li>
+      <li><a data-key="navContact" href="#contact">Contact</a></li>
     </ul>
+
+    <!-- Sélecteur de langue -->
+    <div class="lang-switch">
+      <img src="img/fr.png" alt="Français" onclick="setLang('fr')">
+      <img src="img/en.png" alt="English" onclick="setLang('en')">
+    </div>
+
+    <!-- Menu burger -->
+    <div class="menu-toggle" id="menu-toggle">☰</div>
   </nav>
 
   <!-- Header -->
   <header id="home">
     <div class="intro">
-      <h1>Salut, je suis Samir</h1>
-      <p>Développeur Web | Pilote | Passionné de technologie</p>
-      <a href="#projects" class="btn">Voir mes projets</a>
+      <h1 data-key="headerName">Samir Bensmail</h1>
+      <p data-key="headerDesc">Développeur Web Full-Stack • Pilote Professionnel • Passionné de Technologie</p>
+      <a href="#projects" class="btn" data-key="headerBtn">Voir mes projets</a>
     </div>
   </header>
 
   <!-- À propos -->
   <section id="about">
-    <h2>À propos</h2>
-    <p>Je suis développeur web avec expérience en Java, Angular et bases de données.</p>
+    <h2 data-key="aboutTitle">À propos</h2>
+    <p data-key="aboutText">
+      Passionné par la technologie et l’aviation, je possède une double expertise en développement logiciel et en aéronautique.
+      En tant que développeur web, j’ai acquis de l’expérience dans la conception d’applications modernes utilisant Java, Spring Boot, Angular, HTML/CSS/JavaScript et bases de données MySQL.
+      J’aime transformer des idées en solutions concrètes, efficaces et fiables.
+      Mon parcours de pilote de ligne m’a également permis de développer des qualités essentielles telles que la rigueur, la gestion du temps, la communication et la prise de décision dans des environnements exigeants.
+      Aujourd’hui, je souhaite mettre à profit cette combinaison unique de compétences pour contribuer à des projets innovants, alliant précision, efficacité et sens du détail.
+    </p>
+  </section>
+
+  <!-- Expériences -->
+  <section id="experience">
+    <h2 data-key="expTitle">Expériences professionnelles</h2>
+    <ul>
+      <li data-key="exp1"><strong>Premier Officier SAAB 340B | 2021–2022</strong><br>Pascan Aviation, Saint-Hubert</li>
+      <li data-key="exp2"><strong>Instructor De Vol | 2019–2021</strong><br>Saint-Hubert Flying School, Saint-Hubert</li>
+      <li data-key="exp3"><strong>Premier Officier B1900D | 2018–2019</strong><br>Execair, Montreal</li>
+      <li data-key="exp4"><strong>Instructor De Vol | 2016–2018</strong><br>Saint-Hubert Flying School, Saint-Hubert</li>
+      <li data-key="exp5"><strong>Formateur en Gestion de projet | 2011–2016</strong><br>City of Montreal, Montreal</li>
+      <li data-key="exp6"><strong>Analyste de Données | 2010–2011</strong><br>City of Montreal, SPVM, Montreal</li>
+      <li data-key="exp7"><strong>Agent de Support Technique Internet et Télécom | 2008–2009</strong><br>Uniserve Communications, Montreal</li>
+      <li data-key="exp8"><strong>Professeur de Mathématque | 2003–2007</strong><br>Various public high schools, Toulouse region</li>
+      <li data-key="exp9"><strong>Analyst Programmeurr | 2000–2002</strong><br>Latélec – Airbus, Toulouse</li>
+    </ul>
+  </section>
+
+  <!-- Formations -->
+  <section id="education">
+    <h2 data-key="eduTitle">Formations</h2>
+    <ul>
+      <li data-key="edu1"><strong>AEC Programme en Developpement Web et POO| 2022–2023</strong><br>
+        Collège Rosemont, Montreal<br>
+        Projet de gestion de rdv médical: HTML5, CSS3, Bootstrap, JavaScript, JQuery, Ajax, Java JEE, Thymeleaf, Spring Boot, Spring Data JPA, MySQL<br>
+        Projet de réservation compagnie aérienne: Spring Boot, Angular, MySQL
+      </li>
+      <li data-key="edu2"></li>
+      <li data-key="edu3"><strong>Bachelor’s in Applied Mathematics | 1999–2000</strong><br>
+        Université de Toulouse le Mirail, Toulouse, France
+      </li>
+      <li data-key="edu5"><strong>Diplôme Universitaire de technologie (DUT) en Statistique et traitement informatique des données | 1997–1998</strong><br>
+        Université de Montpellier, Carcassonne, France<br>
+        Analyste scientifique
+      </li>
+      <li data-key="edu4"><strong>University Diploma in Scientific Analysis | 1998–1999</strong><br>
+        Université Paul Sabatier, Toulouse, France<br>
+        Analyste scientifique
+      </li>
+      
+    </ul>
   </section>
 
   <!-- Projets -->
   <section id="projects">
-    <h2>Mes Projets</h2>
+    <h2 data-key="projectsTitle">Mes Projets</h2>
     <div class="projects-grid">
-      <div class="card">
+      <div class="card" data-key="proj1">
         <h3>Gestion de rendez-vous médical</h3>
         <p>Application web Java Spring Boot + MySQL</p>
       </div>
-      <div class="card">
+      <div class="card" data-key="proj2">
         <h3>Réservation compagnie aérienne</h3>
         <p>Projet Angular + Spring Boot</p>
       </div>
-      <div class="card">
+      <div class="card" data-key="proj3">
         <h3>Portfolio personnel</h3>
         <p>Créé en HTML, CSS et JavaScript</p>
       </div>
@@ -58,22 +115,33 @@
 
   <!-- Compétences -->
   <section id="skills">
-    <h2>Compétences</h2>
+    <h2 data-key="skillsTitle">Compétences</h2>
     <div class="skills-list">
-      <span>HTML / CSS / JavaScript</span>
-      <span>Java / Spring Boot</span>
-      <span>Angular</span>
-      <span>MySQL</span>
-      <span>Git & GitHub</span>
+      <img src="img/html.png" alt="HTML">
+      <img src="img/css.png" alt="CSS">
+      <img src="img/js.png" alt="JavaScript">
+      <img src="img/angular.png" alt="angular">
+      <img src="img/java.png" alt="JavaS">
+      <img src="img/cpp.png" alt="c++">
+      <img src="img/csharp.png" alt="csharp">
+      <img src="img/mysql.png" alt="mysql">
+      <img src="img/github.png" alt="github">
+
     </div>
   </section>
 
   <!-- Contact / Footer -->
   <footer id="contact">
-    <h2>Contact</h2>
-    <p>Email : <a href="mailto:s.bensmail@gmail.com">s.bensmail@gmail.com</a></p>
-    <p><a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+    <h2 data-key="contactTitle">Contact</h2>
+    <p data-key="contactEmail">Email : <a href="mailto:s.bensmail@gmail.com">s.bensmail@gmail.com</a></p>
+    <p>
+      <a href="#" data-key="contactLinkedIn">LinkedIn</a> | 
+      <a href="#" data-key="contactGitHub">GitHub</a>
+    </p>
   </footer>
+
+  <!-- Scripts -->
   <script src="js/script.js"></script>
+  <script src="js/lang.js"></script>
 </body>
 </html>

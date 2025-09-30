@@ -1,53 +1,54 @@
-/* Reset de base pour tous les éléments */
+/* ========== Reset général ========== */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* inclut padding et border dans la largeur/hauteur */
-  font-family: "Roboto", sans-serif; /* police par défaut */
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
-/* Body */
+
 body {
   line-height: 1.6;
   color: #333;
-  background: #fefefe;
+  background: #f9f9f9;
 }
 
-/* Barre de navigation */
+/* ========== Navigation ========== */
 nav {
   background: #222;
   color: white;
-  position: fixed; /* toujours visible en haut */
+  position: fixed;
   width: 100%;
   top: 0;
-  z-index: 100; /* devant le reste du contenu */
+  z-index: 1000;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 0;
+  height: 60px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+nav .logo{
+  margin: 0; /* supprime tout margin éventuel */
 }
 
-nav .logo {
-  margin-left: 0;    /* assure-toi qu’il colle bien au bord */
-}
 nav .logo img {
-  height: 80px;   /* ou la taille que tu veux */
-  width: auto;    /* pour garder les proportions */
-  display: block;
+  width: 60px; /* ta taille souhaitée */
+  height: auto;
+  display: block; /* supprime l'espace blanc autour de l'image inline */
 }
 
 nav ul {
-  display: flex;
   list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-nav ul li {
-  margin: 0 15px;
-}
 nav ul li a {
   color: white;
   text-decoration: none;
-  padding: 15px;
+  padding: 10px 15px;
   display: block;
+  transition: 0.3s;
 }
 
 nav ul li a:hover {
@@ -55,139 +56,219 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
-/* Bouton hamburger */
-.menu-toggle {
-  display: none; /* caché sur desktop */
-  font-size: 1.8rem;
-  cursor: pointer;
+/* Sélecteur de langue */
+.lang-switch {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-right: 10px;
 }
 
+.lang-switch img {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.lang-switch img:hover {
+  transform: scale(1.1);
+}
+
+/* Menu burger */
+
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* ========== Header ========== */
 header {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
               url("../img/header.jpg") no-repeat center/cover;
   height: 100vh;
+  color: white;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
   padding: 20px;
 }
 
 header h1 {
   font-size: 3rem;
+  margin-bottom: 15px;
 }
 
 header p {
   font-size: 1.5rem;
-  margin-top: 10px;
+  font-style: italic;
 }
 
 header .btn {
   display: inline-block;
   margin-top: 20px;
-  padding: 10px 20px;
-  background: #1e90ff;
+  padding: 12px 25px;
+  background: #e67e22;
   color: white;
-  text-decoration: none;
   border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 header .btn:hover {
-  background: #0d6efd;
+  background: #d35400;
 }
 
+/* ========== Sections ========== */
+/* Sections générales */
 section {
-  padding: 60px 20px;
-  max-width: 1000px;
+  padding: 5px 20px;
+  max-width: 1200px;
   margin: auto;
+  background: #97c3f4;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
 }
 
 section h2 {
   text-align: center;
-  color: #1e90ff;
-  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  position: relative;
 }
 
+section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #2c3e50;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* À propos */
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+  text-align: justify;
+}
+
+/* Expériences & Formations */
+#experience ul,
+#education ul {
+  list-style: none;
+  padding: 0;
+}
+
+#experience ul li,
+#education ul li {
+  background: #fff;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+#experience ul li:hover,
+#education ul li:hover {
+  transform: translateY(-3px);
+}
+
+/* Projets */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
 .card {
-  background: #f4f4f4;
-  padding: 20px;
-  border-radius: 10px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Compétences */
 
 .skills-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
+  flex-wrap: wrap;        /* les logos passent à la ligne si besoin */
+  justify-content: center; 
+  gap: 20px;              /* espace entre les logos */
+  padding: 20px 0;
 }
 
-.skills-list span {
-  background: #eee;
-  padding: 10px 15px;
-  border-radius: 5px;
+.skills-list img {
+  width: 60px;            /* taille uniforme pour tous les logos */
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s; /* effet au survol */
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  nav ul {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background: #222;
-    flex-direction: column;
-    display: none; /* caché par défaut */
-  }
-
-  nav ul.show {
-    display: flex; /* visible quand on clique sur le burger */
-  }
-
-  .menu-toggle {
-    display: block; /* hamburger visible sur mobile */
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  header h1 {
-    font-size: 2rem;
-  }
-
-  header p {
-    font-size: 1.2rem;
-  }
+.skills-list img:hover {
+  transform: scale(1.1);  /* agrandissement au survol */
 }
 
-
-
-
-
-
-
+/* Footer */
 footer {
-  background: #222;
-  color: white;
+  background: #1e1e1e;
+  color: #fff;
   text-align: center;
-  padding: 30px 20px;
+  padding: 50px 20px;
 }
 
 footer a {
   color: #1e90ff;
   text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #63b3ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  section {
+    padding: 80px 15px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
