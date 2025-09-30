@@ -21,15 +21,15 @@ const translations = {
     
     // Expériences
     expTitle: "Expériences professionnelles",
-    exp1: "Premier Officier SAAB 340B | 2021–2022 — Pascan Aviation, Saint-Hubert",
-    exp2: "Instructeur de Vol | 2019–2021 — Saint-Hubert Flying School, Saint-Hubert",
-    exp3: "Premier Officier B1900D | 2018–2019 — Execair, Montréal",
-    exp4: "Instructeur de Vol | 2016–2018 — Saint-Hubert Flying School, Saint-Hubert",
-    exp5: "Formateur en Gestion de projet | 2011–2016 — Ville de Montréal",
-    exp6: "Analyste de Données | 2010–2011 — Ville de Montréal (SPVM)",
-    exp7: "Agent de Support Technique Internet et Télécom | 2008–2009 — Uniserve Communications, Montréal",
-    exp8: "Professeur de Mathématiques | 2003–2007 — Divers lycées publics, Toulouse",
-    exp9: "Analyste Programmeur | 2000–2002 — Latélec – Airbus, Toulouse",
+    exp1: "<strong>Premier Officier SAAB 340B</strong> | 2021–2022 — Pascan Aviation, Saint-Hubert",
+    exp2: "<strong>Instructeur de Vol</strong> | 2019–2021 — Saint-Hubert Flying School, Saint-Hubert",
+    exp3: "<strong>Premier Officier B1900D</strong> | 2018–2019 — Execair, Montréal",
+    exp4: "<strong>Instructeur de Vol</strong> | 2016–2018 — Saint-Hubert Flying School, Saint-Hubert",
+    exp5: "<strong>Formateur en Gestion de projet</strong> | 2011–2016 — Ville de Montréal",
+    exp6: "<strong>Analyste de Données</strong> | 2010–2011 — Ville de Montréal (SPVM)",
+    exp7: "<strong>Agent de Support Technique Internet et Télécom</strong> | 2008–2009 — Uniserve Communications, Montréal",
+    exp8: "<strong>Professeur de Mathématiques</strong> | 2003–2007 — Divers lycées publics, Toulouse",
+    exp9: "<strong>Analyste Programmeur</strong> | 2000–2002 — Latélec – Airbus, Toulouse",
 
     //Formations
     eduTitle: "Formations",
@@ -70,15 +70,15 @@ const translations = {
     
     // Experience
     expTitle: "Professional Experience",
-    exp1: "First Officer SAAB 340B | 2021–2022 — Pascan Aviation, Saint-Hubert",
-    exp2: "Flight Instructor | 2019–2021 — Saint-Hubert Flying School, Saint-Hubert",
-    exp3: "First Officer B1900D | 2018–2019 — Execair, Montreal",
-    exp4: "Flight Instructor | 2016–2018 — Saint-Hubert Flying School, Saint-Hubert",
-    exp5: "Project Management Trainer | 2011–2016 — City of Montreal",
-    exp6: "Data Analyst | 2010–2011 — City of Montreal (SPVM)",
-    exp7: "Internet & Telecom Technical Support Agent | 2008–2009 — Uniserve Communications, Montreal",
-    exp8: "Mathematics Teacher | 2003–2007 — Various public high schools, Toulouse",
-    exp9: "Programmer Analyst | 2000–2002 — Latélec – Airbus, Toulouse",
+    exp1: "<strong>First Officer SAAB 340B</strong> | 2021–2022 — Pascan Aviation, Saint-Hubert",
+    exp2: "<strong>Flight Instructor</strong> | 2019–2021 — Saint-Hubert Flying School, Saint-Hubert",
+    exp3: "<strong>First Officer B1900D</strong> | 2018–2019 — Execair, Montreal",
+    exp4: "<strong>Flight Instructor</strong> | 2016–2018 — Saint-Hubert Flying School, Saint-Hubert",
+    exp5: "<strong>Project Management Trainer</strong> | 2011–2016 — City of Montreal",
+    exp6: "<strong>Data Analyst</strong> | 2010–2011 — City of Montreal (SPVM)",
+    exp7: "<strong>Internet & Telecom Technica</strong>l Support Agent | 2008–2009 — Uniserve Communications, Montreal",
+    exp8: "<strong>Mathematics Teacher</strong> | 2003–2007 — Various public high schools, Toulouse",
+    exp9: "<strong>Programmer Analyst</strong> | 2000–2002 — Latélec – Airbus, Toulouse",
 
     // Education
     eduTitle: "Education",
