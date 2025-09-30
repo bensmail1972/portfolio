@@ -40,9 +40,9 @@ const translations = {
 
     //Projets
     projectsTitle: "Mes Projets",
-    proj1: "Gestion de rendez-vous médical — Application web Java Spring Boot + MySQL",
-    proj2: "Réservation compagnie aérienne — Projet Angular + Spring Boot",
-    proj3: "Portfolio personnel — Créé en HTML, CSS et JavaScript",
+    proj1: "<strong>Gestion de rendez-vous médical</strong><br>Application web Java Spring Boot + MySQL",
+    proj2: "<strong>Réservation compagnie aérienne</strong><br>Projet Angular + Spring Boot",
+    proj3: "<strong>Portfolio personnel</strong><br>Créé en HTML, CSS et JavaScript",
 
     //Compétences
     skillsTitle: "Compétences",
@@ -91,9 +91,9 @@ const translations = {
 
     // Projects
     projectsTitle: "Projects",
-    proj1: "<strong>Medical Appointment Management</strong> — Web App (Java Spring Boot + MySQL)",
-    proj2: "<strong>Airline Reservation</strong> — Angular + Spring Boot Project",
-    proj3: "<strong>Personal Portfolio</strong> — Built with HTML, CSS and JavaScript",
+    proj1: "<strong>Medical Appointment Management</strong><br>Web App (Java Spring Boot + MySQL)",
+    proj2: "<strong>Airline Reservation</strong><br>Angular + Spring Boot Project",
+    proj3: "<strong>Personal Portfolio</strong><br> Built with HTML, CSS and JavaScript",
 
 
     // Skills
