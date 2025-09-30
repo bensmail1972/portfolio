@@ -93,7 +93,7 @@ const translations = {
     projectsTitle: "Projects",
     proj1: "<strong>Medical Appointment Management</strong><br>Web App (Java Spring Boot + MySQL)",
     proj2: "<strong>Airline Reservation</strong><br>Angular + Spring Boot Project",
-    proj3: "<strong>Personal Portfolio</strong><br> Built with HTML, CSS and JavaScript",
+    proj3: "<strong>Personal Portfolio</strong><br>Built with HTML, CSS and JavaScript",
 
 
     // Skills
